@@ -1,0 +1,11 @@
+1) 
+SELECT magasin, SUM(montant)
+FROM vente
+GROUP BY magasin,
+
+
+
+2)
+SELECT montant, COUNT(*)
+FROM vente
+GROUP BY montant,
