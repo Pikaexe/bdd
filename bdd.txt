@@ -9,3 +9,18 @@ GROUP BY magasin,
 SELECT montant, COUNT(*)
 FROM vente
 GROUP BY montant,
+
+EXS 2
+
+1)
+SELECT magasin, SUM(montant) as total
+FROM vente
+GROUP BY magasin
+HAVING total >= 1500,
+
+2)
+SELECT magasin, MIN(montant)
+FROM vente
+GROUP BY magasin
+HAVING COUNT(*) > 2,
+
